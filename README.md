@@ -20,7 +20,7 @@ cdef int add(int a, int b) :
 
 *python*
 ```
-def test() :
+def test():
     for _ in range(100000):
         pass
 
@@ -30,9 +30,9 @@ test()
 
 *cython*
 ```
-def test():
+def test() :
     for _ in range(100000):
-        pass
+        ...
 
 test()
 ```
